@@ -31,8 +31,8 @@ public class TurkeyEntity extends Animal {
      * General Entity Setup
      */
     @Override
-    protected void defineSynchedData(SynchedEntityData.Builder pBuilder) {
-        super.defineSynchedData(pBuilder);
+    protected void defineSynchedData() {
+        super.defineSynchedData();
     }
 
     @Override

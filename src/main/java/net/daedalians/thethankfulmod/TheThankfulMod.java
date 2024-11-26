@@ -35,8 +35,8 @@ public class TheThankfulMod
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
 
-    public TheThankfulMod(FMLJavaModLoadingContext context){
-        IEventBus modEventBus = context.getModEventBus();
+    public TheThankfulMod(){
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
 
