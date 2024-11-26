@@ -9,6 +9,4 @@ public class ModModelLayers {
     public static final ModelLayerLocation TURKEY_LAYER = new ModelLayerLocation(
             new ResourceLocation(TheThankfulMod.MOD_ID, "turkey_layer"), "main");
 
-
-
 }
