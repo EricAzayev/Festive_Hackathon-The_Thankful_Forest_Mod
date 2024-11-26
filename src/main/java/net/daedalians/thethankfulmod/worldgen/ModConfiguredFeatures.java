@@ -23,7 +23,7 @@ public class ModConfiguredFeatures {
 
     //public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FALL_KEY = registerKey("fall"); //fall tree
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FALL_KEY = registerKey("fall"); //fall tree (cleared)
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -32,7 +32,7 @@ public class ModConfiguredFeatures {
         register(context, FALL_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder( //build tree
                 //choose branch content
                 BlockStateProvider.simple(Blocks.OAK_LOG), //stateprovide: what block should be placed?
-                new StraightTrunkPlacer(5, 4, 3),
+                new StraightTrunkPlacer(3, 4, 3),
                 //baseHeight, heightRandomA, highRandomB
 
                 //choose leaf content

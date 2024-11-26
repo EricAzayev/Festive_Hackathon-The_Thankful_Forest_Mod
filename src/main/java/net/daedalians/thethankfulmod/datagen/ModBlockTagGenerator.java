@@ -2,10 +2,12 @@ package net.daedalians.thethankfulmod.datagen;
 
 
 import net.daedalians.thethankfulmod.TheThankfulMod;
+import net.daedalians.thethankfulmod.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -22,6 +24,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.FALL_LEAVES.get());
     }
 }
