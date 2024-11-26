@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "the_thankful_mod:block/fall_grass_bottom",
+    "up": "the_thankful_mod:block/fall_grass_top",
+    "north": "the_thankful_mod:block/fall_grass_side",
+    "east": "the_thankful_mod:block/fall_grass_side",
+    "south": "the_thankful_mod:block/fall_grass_side",
+    "west": "the_thankful_mod:block/fall_grass_side",
+    "particle": "the_thankful_mod:block/fall_grass_side"
+  }
+}

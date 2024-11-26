@@ -1,0 +1,4 @@
+// 1.20.6	2024-11-23T23:03:02.3347435	Loot Tables
+93dc626a3d174cb11fb92ed92a95cadc642c07cb data/the_thankful_mod/loot_tables/blocks/fall_grass.json
+b492d52bf48546d62ec9e33af9b9c4cd7c676eb6 data/the_thankful_mod/loot_tables/blocks/fall_leaves.json
+852d69e11e3d23f5088bd09f544154b8e5cc2bb1 data/the_thankful_mod/loot_tables/blocks/fall_sapling.json
