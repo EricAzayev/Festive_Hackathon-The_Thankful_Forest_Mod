@@ -2,6 +2,7 @@ package net.daedalians.thethankfulmod.event;
 
 import net.daedalians.thethankfulmod.ModEntities;
 import net.daedalians.thethankfulmod.TheThankfulMod;
+import net.daedalians.thethankfulmod.entity.custom.TurkeyBossEntity;
 import net.daedalians.thethankfulmod.entity.custom.TurkeyEntity;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,5 +14,6 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event){
         event.put(ModEntities.TURKEY.get(), TurkeyEntity.createAttributes().build());
+        event.put(ModEntities.TURKEY_BOSS.get(), TurkeyBossEntity.createAttributes().build());
     }
 }
