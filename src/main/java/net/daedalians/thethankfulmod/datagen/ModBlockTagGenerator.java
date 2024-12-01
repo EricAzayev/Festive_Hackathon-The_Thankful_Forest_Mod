@@ -6,6 +6,7 @@ import net.daedalians.thethankfulmod.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
@@ -25,6 +26,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.FALL_LEAVES.get());
+                .add(ModBlocks.FALL_LEAVES.get())
+                .add(ModBlocks.MAPLE_LEAVES.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.MAPLE_LOG.get())
+                .add(ModBlocks.MAPLE_WOOD.get())
+                .add(ModBlocks.STRIPPED_MAPLE_LOG.get())
+                .add(ModBlocks.STRIPPED_MAPLE_WOOD.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.MAPLE_PLANKS.get());
     }
 }
