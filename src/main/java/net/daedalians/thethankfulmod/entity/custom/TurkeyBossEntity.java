@@ -20,6 +20,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
+import net.daedalians.thethankfulmod.sound.ModSounds;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.damagesource.DamageSource;
 
 public class TurkeyBossEntity extends Animal{
     private static final EntityDataAccessor<Boolean> ATTACKING =
@@ -105,5 +108,23 @@ public class TurkeyBossEntity extends Animal{
     public boolean isAttacking(){
         return this.entityData.get(ATTACKING);
     }
+
+    
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.TURKEY_GOBBLE.get();  // Plays the turkey gobble sound
+    }
+
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return ModSounds.TURKEY_HURT.get(); // Plays the turkey hurt sound
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return ModSounds.TURKEY_GOBBLE.get();  // Plays the turkey gobble sound
+    }
+
 
 }

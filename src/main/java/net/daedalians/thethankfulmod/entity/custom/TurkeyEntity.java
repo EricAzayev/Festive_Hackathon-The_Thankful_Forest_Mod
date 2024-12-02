@@ -20,6 +20,11 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
+import net.daedalians.thethankfulmod.sound.ModSounds;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.damagesource.DamageSource;
+import static io.netty.util.ResourceLeakDetector.getLevel;
 
 public class TurkeyEntity extends Animal {
     public TurkeyEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
@@ -63,5 +68,23 @@ public class TurkeyEntity extends Animal {
     public @Nullable AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
         return ModEntities.TURKEY.get().create(serverLevel);
     }
+
+    
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.TURKEY_GOBBLE.get();  // Plays the turkey gobble sound
+    }
+
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return ModSounds.TURKEY_HURT.get(); // Plays the turkey hurt sound
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return ModSounds.TURKEY_GOBBLE.get();  // Plays the turkey gobble sound
+    }
+
 
 }
