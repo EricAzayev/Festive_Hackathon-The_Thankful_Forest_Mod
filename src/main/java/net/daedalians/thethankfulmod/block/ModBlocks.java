@@ -51,12 +51,12 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> FALL_SAPLING = registerBlock("fall_sapling",
-            () -> new SaplingBlock(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING))); //return and implement Fall_OAK FALL
+            () -> new SaplingBlock(new FallTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING))); //return and implement Fall_OAK FALL
 //    public static final RegistryObject<Block> MAPLE_SAPLING = registerBlock("fall_sapling",
 //            () -> new SaplingBlock(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> MAPLE_SAPLING = registerBlock("maple_sapling",
-            () -> new SaplingBlock(new FallTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> FALL_GRASS = registerBlock("fall_grass",
             () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));

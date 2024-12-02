@@ -36,7 +36,7 @@ public class ModBiomes {
     public static Biome fallBiome(BootstapContext<Biome> context) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
         //Turkey Spawn
-        //spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.TURKEY.get(), 2, 3, 5));
+        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.TURKEY.get(), 4, 3, 7));
 
         //spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 5, 4, 4));
 
@@ -55,10 +55,13 @@ public class ModBiomes {
         BiomeDefaultFeatures.addExtraGold(biomeBuilder);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.TREES_PLAINS);
+        //biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.FOREST_FLOWERS);
 
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FALL_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.MAPLE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.MOREFALL_PLACED_KEY);
         //Fall Tree Here!!!!!!!
 
         return new Biome.BiomeBuilder()
@@ -68,12 +71,12 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
-                        .skyColor(0x30c918)
-                        .grassColorOverride(0x7f03fc)
-                        .foliageColorOverride(0xd203fc)
-                        .fogColor(0x22a1e6)
+                        .waterColor(0x003366) //blue good
+                        .waterFogColor(0xbf1b26) //unchanged
+                        .skyColor(0xadd8e6) //experimental better
+                        .grassColorOverride(0xffa500) // orange good
+                        .foliageColorOverride(0xffa500) //experimental
+                        .fogColor(0xadd8e6) //experimental better
                         .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS)
                         //.backgroundMusic(Musics.GAME)
                 .build()).build();

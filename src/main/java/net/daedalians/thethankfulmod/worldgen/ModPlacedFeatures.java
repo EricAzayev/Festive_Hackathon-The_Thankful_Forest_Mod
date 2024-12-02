@@ -23,17 +23,23 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> FALL_PLACED_KEY = registerKey("fall_placed");
-    //public static final ResourceKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
+    public static final ResourceKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
+
+    public static final ResourceKey<PlacedFeature> MOREFALL_PLACED_KEY = registerKey("morefall_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
         register(context, FALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FALL_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(15, 0.2f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(8, 0.2f, 3),
                         ModBlocks.FALL_SAPLING.get()));
 
-//        register(context, MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAPLE_KEY),
-//                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.2f, 1),
-//                        ModBlocks.FALL_SAPLING.get())); //fall sapling works for now
+        register(context, MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAPLE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.2f, 4),
+                        ModBlocks.FALL_SAPLING.get())); //
+
+        register(context, MOREFALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MOREFALL_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(5, 0.2f, 4),
+                        ModBlocks.FALL_SAPLING.get()));
         //density counter, the chance of, getting this many extra (params of countExtra() method)
         //!Warning!, change decimal must div by 1 to a finite number. Yes(1 / 10 = 0.1), No(1 / 3 = 0.333...)
     }

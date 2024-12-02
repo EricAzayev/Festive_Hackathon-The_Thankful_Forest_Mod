@@ -1,6 +1,8 @@
-// 1.20.1	2024-12-01T14:48:51.7300889	Registries
-c0facefd19daa46dda8b02280a9438aa17fba387 data/the_thankful_mod/forge/biome_modifier/add_tree_fall.json
-e16c72e228ed31c8bb141b7bea85b290a16a0bdf data/the_thankful_mod/worldgen/biome/fall_biome.json
-ec8bc2819930dc54440baf950d3d03a84b68d867 data/the_thankful_mod/worldgen/configured_feature/fall.json
-f3de3edf55cee9f26c4a17b1717690e9cb0027f1 data/the_thankful_mod/worldgen/configured_feature/maple.json
-a92f5dc9cad92c3dfaa156162fd4970a58a44fc5 data/the_thankful_mod/worldgen/placed_feature/fall_placed.json
+// 1.20.1	2024-12-01T23:04:44.821461	Registries
+4b00dc41b98a623dc6d2f2f0d946471158aec338 data/the_thankful_mod/worldgen/biome/fall_biome.json
+b73b9d4fd5108b5f070a670997a59b0052a3c1d2 data/the_thankful_mod/worldgen/configured_feature/fall.json
+c21db3c76ff45535ab79aa6fa641c10886aea3fc data/the_thankful_mod/worldgen/configured_feature/maple.json
+4dd8347c63f97460343f16595d254a21978d40a4 data/the_thankful_mod/worldgen/configured_feature/morefall.json
+6439d8d9d1e92bf57c0db1d7246ebc2a4d78857c data/the_thankful_mod/worldgen/placed_feature/fall_placed.json
+26613860ed1d9c15c0355987b7f77bffa3ef96b7 data/the_thankful_mod/worldgen/placed_feature/maple_placed.json
+15ab3014d451142d5c71325054df107ae2ce6ad0 data/the_thankful_mod/worldgen/placed_feature/morefall_placed.json
