@@ -5,6 +5,7 @@ import net.daedalians.thethankfulmod.TheThankfulMod;
 import net.daedalians.thethankfulmod.worldgen.tree.FallTreeGrower;
 import net.daedalians.thethankfulmod.worldgen.ModConfiguredFeatures;
 import net.daedalians.thethankfulmod.worldgen.tree.FallTreeGrower;
+import net.daedalians.thethankfulmod.worldgen.tree.MapleTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -36,10 +37,12 @@ public class ModBlocks {
             ));
 
     public static final RegistryObject<Block> FALL_SAPLING = registerBlock("fall_sapling",
-            () -> new SaplingBlock(new FallTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING))); //return and implement Fall_OAK
+            () -> new SaplingBlock(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING))); //return and implement Fall_OAK FALL
+//    public static final RegistryObject<Block> MAPLE_SAPLING = registerBlock("fall_sapling",
+//            () -> new SaplingBlock(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> FALL_GRASS = registerBlock("fall_grass",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
+            () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
 
     public static final RegistryObject<Block> SCATTERED_LEAVES = registerBlock("scattered_leaves",
             () -> new FlatBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)

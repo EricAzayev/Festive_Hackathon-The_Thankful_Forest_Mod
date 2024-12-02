@@ -10,6 +10,8 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
@@ -21,14 +23,21 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> FALL_PLACED_KEY = registerKey("fall_placed");
+    //public static final ResourceKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
         register(context, FALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FALL_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(11, 0.1f, 5),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(15, 0.2f, 1),
                         ModBlocks.FALL_SAPLING.get()));
+
+//        register(context, MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAPLE_KEY),
+//                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.2f, 1),
+//                        ModBlocks.FALL_SAPLING.get())); //fall sapling works for now
         //density counter, the chance of, getting this many extra (params of countExtra() method)
         //!Warning!, change decimal must div by 1 to a finite number. Yes(1 / 10 = 0.1), No(1 / 3 = 0.333...)
     }
+
     private static ResourceKey<PlacedFeature> registerKey(String name) {
         return ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(TheThankfulMod.MOD_ID, name));
     }

@@ -1,4 +1,6 @@
-// 1.20.1	2024-11-26T14:40:32.3994506	Registries
+// 1.20.1	2024-12-01T14:48:51.7300889	Registries
 c0facefd19daa46dda8b02280a9438aa17fba387 data/the_thankful_mod/forge/biome_modifier/add_tree_fall.json
+e16c72e228ed31c8bb141b7bea85b290a16a0bdf data/the_thankful_mod/worldgen/biome/fall_biome.json
 ec8bc2819930dc54440baf950d3d03a84b68d867 data/the_thankful_mod/worldgen/configured_feature/fall.json
-ed1b4c90351311c67a1e477e6b0b4c32472b0d44 data/the_thankful_mod/worldgen/placed_feature/fall_placed.json
+f3de3edf55cee9f26c4a17b1717690e9cb0027f1 data/the_thankful_mod/worldgen/configured_feature/maple.json
+a92f5dc9cad92c3dfaa156162fd4970a58a44fc5 data/the_thankful_mod/worldgen/placed_feature/fall_placed.json

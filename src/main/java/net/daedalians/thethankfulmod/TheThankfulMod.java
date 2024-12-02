@@ -9,6 +9,8 @@ import net.daedalians.thethankfulmod.item.ModItems;
 //=======
 import net.daedalians.thethankfulmod.entity.client.TurkeyRenderer;
 //>>>>>>> d33797dcf909eb64f45956bae3ef9f6fbcb6ed30
+import net.daedalians.thethankfulmod.worldgen.biome.ModTerrablender;
+import net.daedalians.thethankfulmod.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -24,6 +26,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TheThankfulMod.MOD_ID)
@@ -44,9 +47,12 @@ public class TheThankfulMod
         ModBlocks.register(modEventBus);
 
         ModEntities.register(modEventBus);
+        ModTerrablender.registerBiomes();
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+
 
 
 
@@ -62,6 +68,7 @@ public class TheThankfulMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
 
     }
 

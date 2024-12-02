@@ -21,6 +21,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.FALL_LEAVES);
         saplingBlock(ModBlocks.FALL_SAPLING);
         blockWithItem(ModBlocks.FALL_GRASS);
+        blockWithItem(ModBlocks.SCATTERED_LEAVES);
 
     }
 

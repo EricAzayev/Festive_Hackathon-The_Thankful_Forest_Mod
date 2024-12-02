@@ -6,6 +6,7 @@ import net.daedalians.thethankfulmod.TheThankfulMod;
 import net.daedalians.thethankfulmod.worldgen.ModBiomeModifiers;
 import net.daedalians.thethankfulmod.worldgen.ModConfiguredFeatures;
 import net.daedalians.thethankfulmod.worldgen.ModPlacedFeatures;
+import net.daedalians.thethankfulmod.worldgen.biome.ModBiomes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -20,7 +21,8 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
+            .add(Registries.BIOME, ModBiomes::boostrap);
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(TheThankfulMod.MOD_ID));
