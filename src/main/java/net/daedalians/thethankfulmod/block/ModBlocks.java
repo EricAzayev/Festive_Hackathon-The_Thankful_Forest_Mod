@@ -1,16 +1,21 @@
 package net.daedalians.thethankfulmod.block;
 
+import net.daedalians.thethankfulmod.block.custom.ModFlammableRotatedPillarBlock;
 import net.daedalians.thethankfulmod.item.ModItems;
 import net.daedalians.thethankfulmod.TheThankfulMod;
 import net.daedalians.thethankfulmod.worldgen.tree.FallTreeGrower;
 import net.daedalians.thethankfulmod.worldgen.ModConfiguredFeatures;
 import net.daedalians.thethankfulmod.worldgen.tree.FallTreeGrower;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,8 +30,8 @@ import static net.daedalians.thethankfulmod.worldgen.ModConfiguredFeatures.FALL_
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-        DeferredRegister.create(ForgeRegistries.BLOCKS, TheThankfulMod.MOD_ID);
-    
+            DeferredRegister.create(ForgeRegistries.BLOCKS, TheThankfulMod.MOD_ID);
+
     public static final RegistryObject<Block> FALL_LEAVES = registerBlock("fall_leaves",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
                     .strength(0.2f)
@@ -34,9 +39,20 @@ public class ModBlocks {
                     .isSuffocating((state, world, pos) -> false) // Prevent suffocation
                     .isViewBlocking((state, world, pos) -> false) // Prevent blocking the view
             ));
+    public static final RegistryObject<Block> MAPLE_LEAVES = registerBlock("maple_leaves",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+                    .strength(0.2f)
+                    .noOcclusion() // Allows light to pass through
+                    .isSuffocating((state, world, pos) -> false) // Prevent suffocation
+                    .isViewBlocking((state, world, pos) -> false) // Prevent blocking the view
+            ));
+
 
     public static final RegistryObject<Block> FALL_SAPLING = registerBlock("fall_sapling",
             () -> new SaplingBlock(new FallTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING))); //return and implement Fall_OAK
+
+    public static final RegistryObject<Block> MAPLE_SAPLING = registerBlock("maple_sapling",
+            () -> new SaplingBlock(new FallTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> FALL_GRASS = registerBlock("fall_grass",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
@@ -50,6 +66,33 @@ public class ModBlocks {
                     .noCollission()
                     .noLootTable()
             ));
+    public static final RegistryObject<Block> MAPLE_LOG = registerBlock("maple_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
+    public static final RegistryObject<Block> MAPLE_WOOD = registerBlock("maple_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_MAPLE_LOG = registerBlock("stripped_maple_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
+    public static final RegistryObject<Block> MAPLE_PLANKS= registerBlock("maple_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
 
     //class methods
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

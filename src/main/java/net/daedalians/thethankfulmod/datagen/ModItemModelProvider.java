@@ -24,6 +24,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
         saplingItem(ModBlocks.FALL_SAPLING);
+        saplingItem(ModBlocks.MAPLE_SAPLING);
 
 
     }
