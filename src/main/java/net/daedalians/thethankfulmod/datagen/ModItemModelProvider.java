@@ -25,6 +25,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.FALL_SAPLING);
         saplingItem(ModBlocks.MAPLE_SAPLING);
+        withExistingParent(ModItems.TURKEY_BOSS_EGG.getId().getPath(), mcLoc("item/turkey_boss_egg"));
+        withExistingParent(ModItems.TURKEY_EGG.getId().getPath(), mcLoc("item/turkey_egg"));
 
 
     }

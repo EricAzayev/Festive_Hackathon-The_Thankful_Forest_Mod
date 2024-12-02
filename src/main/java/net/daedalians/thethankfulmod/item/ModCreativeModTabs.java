@@ -30,6 +30,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STRIPPED_MAPLE_LOG.get());
                         pOutput.accept(ModBlocks.STRIPPED_MAPLE_WOOD.get());
                         pOutput.accept(ModBlocks.MAPLE_PLANKS.get());
+                        pOutput.accept(ModItems.TURKEY_BOSS_EGG.get());
+                        pOutput.accept(ModItems.TURKEY_EGG.get());
 
                         //pOutput.accept(ModItems.SAPPHIRE.get());
                     })
