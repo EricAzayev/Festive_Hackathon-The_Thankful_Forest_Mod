@@ -64,8 +64,4 @@ public class TurkeyEntity extends Animal {
         return ModEntities.TURKEY.get().create(serverLevel);
     }
 
-
-    /**
-     * To Be Added: Custom Animations
-     */
 }

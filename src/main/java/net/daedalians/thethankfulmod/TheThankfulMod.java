@@ -75,6 +75,10 @@ public class TheThankfulMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event){
+        if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS){
+            event.accept(ModItems.TURKEY_BOSS_EGG);
+            event.accept(ModItems.TURKEY_EGG);
+        }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             //event.accept(ModItems.FALL_SAPLING);
             event.accept(ModItems.SAPPHIRE);
