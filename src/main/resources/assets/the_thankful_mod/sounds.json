@@ -1,0 +1,18 @@
+{
+  "gobble": {
+    "sounds": [
+      {
+        "name": "the_thankful_mod:gobble",
+        "stream": false
+      }
+    ]
+  },
+  "hurt": {
+    "sounds": [
+      {
+        "name": "the_thankful_mod:hurt",
+        "stream": false
+      }
+    ]
+  }
+}
