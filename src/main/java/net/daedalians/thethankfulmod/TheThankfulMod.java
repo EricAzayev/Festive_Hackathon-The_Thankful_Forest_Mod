@@ -10,6 +10,7 @@ import net.daedalians.thethankfulmod.item.ModItems;
 //=======
 import net.daedalians.thethankfulmod.entity.client.TurkeyRenderer;
 //>>>>>>> d33797dcf909eb64f45956bae3ef9f6fbcb6ed30
+import net.daedalians.thethankfulmod.sound.ModSounds;
 import net.daedalians.thethankfulmod.worldgen.biome.ModTerrablender;
 import net.daedalians.thethankfulmod.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -49,6 +50,9 @@ public class TheThankfulMod
 
         ModEntities.register(modEventBus);
         ModTerrablender.registerBiomes();
+
+        // Register the mod sounds
+        ModSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
