@@ -20,6 +20,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
+import net.daedalians.thethankfulmod.sound.ModSounds;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.damagesource.DamageSource;
 
 public class TurkeyBossEntity extends Animal{
     private static final EntityDataAccessor<Boolean> ATTACKING =
