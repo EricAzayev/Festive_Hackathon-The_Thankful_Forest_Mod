@@ -106,4 +106,22 @@ public class TurkeyBossEntity extends Animal{
         return this.entityData.get(ATTACKING);
     }
 
+    
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.TURKEY_GOBBLE.get();  // Plays the turkey gobble sound
+    }
+
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return ModSounds.TURKEY_HURT.get(); // Plays the turkey hurt sound
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return ModSounds.TURKEY_GOBBLE.get();  // Plays the turkey gobble sound
+    }
+
+
 }
