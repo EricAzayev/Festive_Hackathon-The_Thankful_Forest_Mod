@@ -8,5 +8,6 @@ public class ModModelLayers {
     // Combination of texture on the model
     public static final ModelLayerLocation TURKEY_LAYER = new ModelLayerLocation(
             new ResourceLocation(TheThankfulMod.MOD_ID, "turkey_layer"), "main");
-
+    public static final ModelLayerLocation TURKEY_BOSS_LAYER = new ModelLayerLocation(
+            new ResourceLocation(TheThankfulMod.MOD_ID, "turkey_boss_layer"), "main");
 }

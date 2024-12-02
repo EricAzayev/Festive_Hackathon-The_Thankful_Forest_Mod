@@ -4,6 +4,7 @@ package net.daedalians.thethankfulmod;
 import com.mojang.logging.LogUtils;
 //<<<<<<< HEAD
 import net.daedalians.thethankfulmod.block.ModBlocks;
+import net.daedalians.thethankfulmod.entity.client.TurkeyBossRenderer;
 import net.daedalians.thethankfulmod.item.ModCreativeModTabs;
 import net.daedalians.thethankfulmod.item.ModItems;
 //=======
@@ -102,6 +103,7 @@ public class TheThankfulMod
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.FALL_LEAVES.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SCATTERED_LEAVES.get(), RenderType.cutout());
             EntityRenderers.register(ModEntities.TURKEY.get(), TurkeyRenderer::new);
+            EntityRenderers.register(ModEntities.TURKEY_BOSS.get(), TurkeyBossRenderer::new);
         }
     }
 }

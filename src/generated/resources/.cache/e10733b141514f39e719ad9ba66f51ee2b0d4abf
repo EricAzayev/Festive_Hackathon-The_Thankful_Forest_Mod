@@ -1,2 +1,4 @@
-// 1.20.1	2024-11-26T13:25:55.5438253	Tags for minecraft:block mod id the_thankful_mod
-ab1582533e2c4e25ec1c02918a67bd8907ad2732 data/forge/tags/blocks/needs_netherite_tool.json
+// 1.20.1	2024-12-01T20:56:55.6047949	Tags for minecraft:block mod id the_thankful_mod
+7e17a2d405f44fc25d0dcfe2e6a77506e6d1745d data/forge/tags/blocks/needs_netherite_tool.json
+496d0b753b620c3d3a0f169804e813562e7e5d21 data/minecraft/tags/blocks/logs_that_burn.json
+4ddd6f95b92fab50af6ba8e3ec578d4460c98854 data/minecraft/tags/blocks/planks.json

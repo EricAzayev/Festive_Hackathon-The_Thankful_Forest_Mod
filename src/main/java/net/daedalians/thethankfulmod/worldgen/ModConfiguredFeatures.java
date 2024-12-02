@@ -49,7 +49,7 @@ public class ModConfiguredFeatures {
 
         register(context, MAPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder( //build tree
                 //choose branch content
-                BlockStateProvider.simple(Blocks.JUNGLE_LOG), //stateprovide: what block should be placed?
+                BlockStateProvider.simple(ModBlocks.MAPLE_LOG.get()), //stateprovide: what block should be placed?
                 //new StraightTrunkPlacer(3, 4, 3),
                 new CherryTrunkPlacer(3, 2, 3, //baseHeight, heightRandA, heightRandB
                         ConstantInt.of(2),ConstantInt.of(3), //branchCount, branchHorizontalLength

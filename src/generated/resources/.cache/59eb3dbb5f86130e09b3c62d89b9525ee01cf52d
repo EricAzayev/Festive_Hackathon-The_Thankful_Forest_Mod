@@ -1,4 +1,11 @@
-// 1.20.1	2024-11-26T13:25:55.5438253	Loot Tables
+// 1.20.1	2024-12-01T20:56:55.6047949	Loot Tables
 93dc626a3d174cb11fb92ed92a95cadc642c07cb data/the_thankful_mod/loot_tables/blocks/fall_grass.json
 ceeb6ed7aa7c525bb745202bb6c6deb1fc8973a5 data/the_thankful_mod/loot_tables/blocks/fall_leaves.json
 852d69e11e3d23f5088bd09f544154b8e5cc2bb1 data/the_thankful_mod/loot_tables/blocks/fall_sapling.json
+9c7255944e092f6dee4125af592246f4fa1c4d98 data/the_thankful_mod/loot_tables/blocks/maple_leaves.json
+7b40b8c9fbb54314b469ac5a087c085875b88f41 data/the_thankful_mod/loot_tables/blocks/maple_log.json
+2fe8fa78ffbe20c0a039447e057eb0fed0593399 data/the_thankful_mod/loot_tables/blocks/maple_planks.json
+4e96a1b7d97d79fa3d80bf2fd2dfc6f2c889ce1e data/the_thankful_mod/loot_tables/blocks/maple_sapling.json
+6aa52a79b3d0b7ab502983d89f7b073a38ffc08a data/the_thankful_mod/loot_tables/blocks/maple_wood.json
+cde9d47ec847d4b176d9d3d80991e215e4f27684 data/the_thankful_mod/loot_tables/blocks/stripped_maple_log.json
+e93af4ed2c604b60f578b04905131af45bd8c6fd data/the_thankful_mod/loot_tables/blocks/stripped_maple_wood.json

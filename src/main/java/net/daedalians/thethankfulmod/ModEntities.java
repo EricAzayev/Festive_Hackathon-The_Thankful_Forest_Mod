@@ -1,5 +1,6 @@
 package net.daedalians.thethankfulmod;
 
+import net.daedalians.thethankfulmod.entity.custom.TurkeyBossEntity;
 import net.daedalians.thethankfulmod.entity.custom.TurkeyEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -17,10 +18,11 @@ public class ModEntities {
                     // Sets the shadow of the mob
                     .sized(.5f, .5f).build("turkey"));
 
+    public static final RegistryObject<EntityType<TurkeyBossEntity>> TURKEY_BOSS =
+            ENTITY_TYPES.register("turkey_boss", () -> EntityType.Builder.of(TurkeyBossEntity::new, MobCategory.CREATURE)
+                    .sized(1f, 1f).build("turkey_boss"));
 
     public static void register(IEventBus eventbus){
         ENTITY_TYPES.register(eventbus);
     }
-
-
 }

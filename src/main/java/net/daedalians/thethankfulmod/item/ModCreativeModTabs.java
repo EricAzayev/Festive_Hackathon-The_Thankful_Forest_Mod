@@ -20,9 +20,17 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.autumn_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.FALL_SAPLING.get()); //checked and good
+                        pOutput.accept(ModBlocks.MAPLE_SAPLING.get());
                         pOutput.accept(ModBlocks.FALL_LEAVES.get());
+                        pOutput.accept(ModBlocks.MAPLE_LEAVES.get());
                         pOutput.accept(ModBlocks.FALL_GRASS.get());
                         pOutput.accept(ModBlocks.SCATTERED_LEAVES.get());
+                        pOutput.accept(ModBlocks.MAPLE_LOG.get());
+                        pOutput.accept(ModBlocks.MAPLE_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_MAPLE_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_MAPLE_WOOD.get());
+                        pOutput.accept(ModBlocks.MAPLE_PLANKS.get());
+
                         //pOutput.accept(ModItems.SAPPHIRE.get());
                     })
                     .build());
