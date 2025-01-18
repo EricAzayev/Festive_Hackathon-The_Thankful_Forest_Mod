@@ -1,46 +1,33 @@
+Fall Biome Mod 🌲🍂🦃
+Explore fall's vibrant beauty and face off against the Turkey Boss in this thanksgiving-themed mod!
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+Features
+🍁 Fall Biome
+Inspired by Forest Biomes: Rolling hills and flatlands covered with the vibrant colors of autumn.
+Atmosphere: Experience the beauty of fall with an orange-hued ambiance and a soft blue sky. The scenery captures the perfect balance of cozy and lively fall weather.
+🌳 Maple Trees
+Dynamic Growth: Unlike regular Oak trees, Maple trees branch off in unique ways, creating a dynamic and immersive forest. Each tree can have up to three branches, making the forest feel alive and varied.
+Future Updates: Maple sap collection will be added in the future, allowing players to harvest and enjoy sweet rewards!
+🦃 Turkey Mob
+They’re not aggressive, even when provoked. They are also not farmable.
+Turkey Eggs: Players can occasionally find turkey eggs scattered on the ground, but beware! Collecting eggs comes with risks...
+🦃 Turkey Boss
+How to Summon: Placed turkey eggs have a chance to spawn the massive Turkey Boss! Be careful not to collect too many eggs, especially in a confined space. The boss isn’t a creature you want showing up in your farm!
+Battle Mechanics:
+The Turkey Boss has powerful peck attacks and can easily overpower an unprepared player.
+Weak Spot: Aim for the boss's feet! The rest of its body is too bulky to damage effectively.
+Rewards: Unique items and loot drops for the Turkey Mob and Boss are planned for future updates.
 
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
+Player Goals
+Immerse yourself in the serene beauty of the Fall Biome.
+Collect turkey eggs strategically while avoiding unnecessary risks.
+Test your combat skills against the unique Turkey Boss and prepare for thrilling battles.
+Explore the dynamic Maple Tree forests for a new twist on familiar forest biomes.
+Future Plans
+Turkey Mob Skittish Behavior: These creatures roam the biome cautiously and will flee if approached too closely. 
+Introduce Maple sap collection for crafting and cooking.
+Add unique items and loot drops for both the Turkey Mob and the Turkey Boss.
+Expand biome features with new plants, items, and potential events.
+We hope you enjoy the Fall Biome Mod! 🍂 Whether you’re here to relax in the beauty of autumn or to test your wits against the mighty Turkey Boss, this mod has something for everyone.
 
-Setup Process:
-==============================
-
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
-
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `./gradlew genEclipseRuns`
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
-
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `./gradlew genIntellijRuns`
-4. Refresh the Gradle Project in IDEA if required.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-(this does not affect your code) and then start the process again.
-
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
-
-Additional Resources: 
-=========================
-Community Documentation: https://docs.minecraftforge.net/en/1.20.1/gettingstarted/
-LexManos' Install Video: https://youtu.be/8VEdtQLuLO0
-Forge Forums: https://forums.minecraftforge.net/
-Forge Discord: https://discord.minecraftforge.net/
+Happy exploring!
