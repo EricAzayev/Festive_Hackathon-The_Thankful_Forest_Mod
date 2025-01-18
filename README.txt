@@ -1,5 +1,5 @@
 Fall Biome Mod 🌲🍂🦃
-Explore fall's vibrant beauty and face off against the Turkey Boss in this thanksgiving-themed mod!
+Explore fall's vibrant beauty and face off against the Turkey Boss in this Thanksgiving-themed mod!
 
 Features
 🍁 Fall Biome
@@ -31,3 +31,6 @@ Expand biome features with new plants, items, and potential events.
 We hope you enjoy the Fall Biome Mod! 🍂 Whether you’re here to relax in the beauty of autumn or to test your wits against the mighty Turkey Boss, this mod has something for everyone.
 
 Happy exploring!
+
+
+![image alt](https://github.com/EricAzayev/Festive_Hackathon-The_Thankful_Forest_Mod/blob/61cffabc771c6df66e0035d59dd0494bd2cad272/demoInventoryPhoto.png)
