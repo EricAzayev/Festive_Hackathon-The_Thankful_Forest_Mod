@@ -2,7 +2,8 @@ Fall Biome Mod 🌲🍂🦃
 Explore fall's vibrant beauty and face off against the Turkey Boss in this Thanksgiving-themed mod!
 
 Mod Demo: https://youtu.be/e0FWjUGnQVA?si=O_j6hmQT3bYklCgP
-Inventory Additions: https://github.com/EricAzayev/Festive_Hackathon-The_Thankful_Forest_Mod/blob/61cffabc771c6df66e0035d59dd0494bd2cad272/demoInventoryPhoto.png
+Inventory Additions
+<img width="1871" height="901" alt="Inventory" src="https://github.com/EricAzayev/Festive_Hackathon-The_Thankful_Forest_Mod/blob/61cffabc771c6df66e0035d59dd0494bd2cad272/demoInventoryPhoto.png />
 
 Features
 🍁 Fall Biome
