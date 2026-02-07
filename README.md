@@ -2,7 +2,11 @@ Fall Biome Mod 🌲🍂🦃
 Explore fall's vibrant beauty and face off against the Turkey Boss in this Thanksgiving-themed mod!
 
 Mod Demo: https://youtu.be/e0FWjUGnQVA?si=O_j6hmQT3bYklCgP
-Inventory Additions
+
+<img width="1329" height="692" alt="image" src="https://github.com/user-attachments/assets/3ceaec16-931d-4398-9744-609a2d8755a3" />
+
+
+**Inventory Add-ons**
 ![alt text](demoInventoryPhoto.png)
 
 Features
