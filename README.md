@@ -5,6 +5,15 @@ Mod Demo: https://youtu.be/e0FWjUGnQVA?si=O_j6hmQT3bYklCgP
 
 <img width="1329" height="692" alt="image" src="https://github.com/user-attachments/assets/3ceaec16-931d-4398-9744-609a2d8755a3" />
 
+## Mobile Support
+This mod is for **Minecraft Java Edition (Forge)** and cannot run on mobile versions of Minecraft (Bedrock/Pocket Edition).
+
+On mobile, you can:
+- Read this documentation
+- View screenshots and the demo video
+
+To play the mod, use Minecraft Java Edition with Forge on desktop/laptop.
+
 
 **Inventory Add-ons**
 ![alt text](demoInventoryPhoto.png)
